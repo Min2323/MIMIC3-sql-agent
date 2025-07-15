@@ -11,26 +11,28 @@ This is just my Toy project implements an interactive SQL agent that allows natu
 
 # Output example:
 
-example #1
-Welcome to the SQL Assistant! Type 'exit' to quit.<br>
+example #1<br>
+Welcome to the SQL Assistant! <br>
+Type 'exit' to quit.<br>
 What would you like to know? how many patients are diagnosed with atrial fibrillation?<br>
 ================================== Ai Message ==================================
 
 SELECT COUNT(DISTINCT person_id) <br>
 FROM condition_occurrence <br>
 JOIN concept ON condition_occurrence.condition_concept_id = concept.concept_id <br>
-WHERE concept.concept_name = 'Atrial fibrillation';<br>
+WHERE concept.concept_name = 'atrial fibrillation';<br>
 ================================== Ai Message ==================================<br>
 
 Answer: There are 10,276 patients diagnosed with atrial fibrillation.
 
-===============================================
+===============================================<br>
 
-example #2
-Welcome to the SQL Assistant! Type 'exit' to quit.<br>
+example #2<br>
+Welcome to the SQL Assistant! <br>
+Type 'exit' to quit.<br>
 What would you like to know? how many patients have diagnosed with hypertension?<br>
 
-================================== Ai Message ==================================
+================================== Ai Message ==================================<br>
 
 SELECT COUNT(DISTINCT person_id) 
 FROM condition_occurrence 
@@ -38,7 +40,7 @@ WHERE condition_concept_id IN (
     SELECT concept_id 
     FROM concept 
     WHERE concept_name LIKE '%hypertension%';
-================================== Ai Message ==================================
+================================== Ai Message ==================================<br>
 
 Answer: There are 20,230 patients diagnosed with hypertension.
 
