@@ -1,5 +1,3 @@
-# MIMIC3 sql agent
-
 # MIMIC-III SQL Agent with LangGraph
 
 This is just my Toy project implements an interactive SQL agent that allows natural language querying over the MIMIC-III clinical database, built using the LangChain and LangGraph frameworks.
