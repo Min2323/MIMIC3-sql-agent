@@ -20,7 +20,7 @@ What would you like to know? how many patients are diagnosed with atrial fibrill
 SELECT COUNT(DISTINCT person_id) <br>
 FROM condition_occurrence <br>
 JOIN concept ON condition_occurrence.condition_concept_id = concept.concept_id <br>
-WHERE concept.concept_name = 'atrial fibrillation';<br>
+WHERE concept.concept_name = '%atrial fibrillation%';<br>
 ================================== Ai Message ==================================<br>
 
 Answer: There are 10,276 patients diagnosed with atrial fibrillation.
