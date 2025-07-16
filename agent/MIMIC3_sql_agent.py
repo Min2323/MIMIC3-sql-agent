@@ -342,7 +342,8 @@ def interactive_sql():
             if 'messages' in output and output['messages']:
                 final_message = output['messages'][-1]
                 if hasattr(final_message, 'content'):
-                    print("\nResponse:", final_message.content)
+                    print("============================================================\n")
+                    print(final_message.content)
                 else:
                     print("\nResponse: No clear answer found.")
             else:
