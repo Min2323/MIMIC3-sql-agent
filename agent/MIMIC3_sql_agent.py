@@ -146,7 +146,7 @@ class State(TypedDict):
     messages: Annotated[list[AnyMessage], add_messages]
 
 
-# 새로운 그래프 정의
+# define workflow for langgraph
 workflow = StateGraph(State)
 
 
